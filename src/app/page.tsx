@@ -138,7 +138,7 @@ export default function Home() {
           <label style={{ color: '#aaa', fontSize: '0.9rem', display: 'block', marginBottom: '5px' }}>Título</label>
           <input 
             style={{
-              width: '100%',
+              width: '90%',
               padding: '12px',
               backgroundColor: '#333',
               border: 'none',
