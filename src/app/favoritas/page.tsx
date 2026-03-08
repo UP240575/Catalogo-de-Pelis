@@ -1,8 +1,12 @@
 
+import MovieCard from "../components/MovieCard";
+
 export default function Page() {
+  
   return (
     <div>
-      <p>favoritas</p>
+      <h1>Tus pelis favoritas</h1>
+      <MovieCard favoritas={true}/>
     </div>
   );
 };
