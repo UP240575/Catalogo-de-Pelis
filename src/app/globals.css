@@ -1,0 +1,26 @@
+
+.mainCard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-radius: 0% ;
+}
+
+.card {
+  flex: 0 0 19%;
+  padding: 10px;
+  margin: 5px;
+  min-width: 210px;
+  max-width: 210px;
+  min-height: 125px;
+  border: 1px solid #000000;
+  font-weight: bold;
+}
+
+.titleCard {
+  text-align: center;
+}
+
+.buttonCard {
+  justify-content: flex-start;
+}
