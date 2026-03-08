@@ -2,25 +2,46 @@
 .mainCard {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
-  border-radius: 0% ;
+  padding: 20px; /* Aumenté el padding para dar más espacio alrededor */
+  gap: 20px; /* Uso gap para una separación más limpia entre tarjetas, en lugar de solo margin */
+  justify-content: center; /* Centra las tarjetas horizontalmente si no ocupan todo el ancho */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más moderna */
+  background-color: #141414;
+  color: #e9ecef;
 }
 
 .card {
-  flex: 0 0 19%;
-  padding: 10px;
-  margin: 5px;
-  min-width: 210px;
-  max-width: 210px;
-  min-height: 125px;
-  border: 1px solid #000000;
-  font-weight: bold;
+  flex: 0 0 19%; /* Mantiene el ancho relativo original */
+  padding: 20px; /* Más espacio interno para que respire el contenido */
+  margin: 0; /* Eliminamos el margin individual porque usamos gap en el padre */
+  min-width: 240px; /* Un poco más ancho para mejor legibilidad */
+  max-width: 260px; /* Un poco más flexible */
+  min-height: 150px; /* Un poco más alto */
+
+  border: 1px solid rgb(61, 56, 56); /* Quitamos el borde negro por defecto */
+  border-radius: 16px; /* Bordes redondeados modernos */
+  background: #1f1f1f; /* Fondo oscuro para la tarjeta */
 }
 
 .titleCard {
   text-align: center;
+  font-size: 1.25rem; /* Tamaño de fuente más grande para el título */
+  font-weight: 600; /* Título en negrita */
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #ffffff; /* Un color gris oscuro para el título */
+  border-bottom: 2px solid #e9ecef; /* Línea sutil debajo del título */
+  padding-bottom: 8px;
 }
 
 .buttonCard {
+  display: flex;
   justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #333;
+  color: #ffffff;
+
 }
