@@ -1,10 +1,19 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MovieCard from "./components/MovieCard";
 
 export default function Home() {
-  // Propiedades de una nueva pelicula
+
+
+
+useEffect(() => {
+    console.log("🎬🚀 Aplicación NIXFLIX iniciada correctamente");
+    console.log("📽️ Catálogo cargado con", peliculas.length, "películas");
+    console.log("❤️ Favoritos iniciales:", peliculasFav.length, "películas");
+  }, []); 
+
+  
   const [name, setName] = useState("");
   const [year, setAge] = useState(2026);
 
@@ -172,6 +181,7 @@ export default function Home() {
         </div>
         
         <button 
+          type="button"
           style={{
             backgroundColor: '#e50914',
             color: 'white',
